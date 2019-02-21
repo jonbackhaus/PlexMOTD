@@ -1,8 +1,8 @@
 #!/bin/bash
 
-source /etc/update-motd.d/config.conf
-source /etc/update-motd.d/colors.txt
-/bin/bash /etc/update-motd.d/dependency-check.sh
+source ./config.conf
+source ./config/colors.txt
+/bin/bash ./config/dependency-check.sh
 
 PLEXSTATS="$(curl -s "$TAUTIP:$TAUTPORT/api/v2?apikey=$TAUTAPI&cmd=get_activity")"
 

@@ -1,6 +1,6 @@
 #!/bin/bash 
  
-source /etc/update-motd.d/colors.txt
+source ./config/colors.txt
 
 echo -e "
  █████████████     █████            █████████████   ${YEL}███████${NC}     ███████

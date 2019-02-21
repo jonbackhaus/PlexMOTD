@@ -1,8 +1,8 @@
 #!/bin/bash
 
-source /etc/update-motd.d/colors.txt
-source /etc/update-motd.d/config.conf
-/bin/bash /etc/update-motd.d/dependency-check.sh
+source ./config/colors.txt
+source ./config.conf
+/bin/bash ./config/dependency-check.sh
 
 LIST="$(transmission-remote -n $TRANSUSER:$TRANSPASS -l)"
 STATS="$(transmission-remote -n $TRANSUSER:$TRANSPASS -st | tail -5)"
