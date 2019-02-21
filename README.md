@@ -9,7 +9,7 @@ I get the torrent stats from Transmission, and I am using Tautulli (PlexPy) API 
 
 ## Usage
 
-Place these files in the `./config/` directory.
+Place these files in the `config/` directory.
 Enter your credentials into `config.conf`
 
 ## Dependencies

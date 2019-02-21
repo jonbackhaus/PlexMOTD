@@ -1,6 +1,6 @@
-#!/bin/bash 
- 
-source ./config/colors.txt
+#!/bin/bash
+
+source config/colors.txt
 
 echo -e "
  █████████████     █████            █████████████   ${YEL}███████${NC}     ███████

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-source ./config/colors.txt
+source config/colors.txt
 source ./config.conf
-/bin/bash ./config/dependency-check.sh
+/bin/bash config/dependency-check.sh
 
 QUEUE="$(curl -s "$SABHOST:$SABPORT/sabnzbd/api?mode=qstatus&apikey=$SABAPI&output=json")"
 

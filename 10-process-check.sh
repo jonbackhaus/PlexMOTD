@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./config/colors.txt
+source config/colors.txt
 
 service_check(){
 

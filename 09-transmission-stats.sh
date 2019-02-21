@@ -1,8 +1,8 @@
 #!/bin/bash
 
-source ./config/colors.txt
+source config/colors.txt
 source ./config.conf
-/bin/bash ./config/dependency-check.sh
+/bin/bash config/dependency-check.sh
 
 LIST="$(transmission-remote -n $TRANSUSER:$TRANSPASS -l)"
 STATS="$(transmission-remote -n $TRANSUSER:$TRANSPASS -st | tail -5)"
