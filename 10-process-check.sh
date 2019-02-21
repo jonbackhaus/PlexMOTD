@@ -13,11 +13,7 @@ service_check(){
 }
 
 PLEXSTATE=$(service_check plexmediaserver)
-TRANSSTATE=$(service_check transmission-daemon)
 TAUTSTATE=$(service_check tautulli)
-OMBISTATE=$(service_check ombi)
 
 echo -e " ${YEL}Plex Status.........:${NC} $(echo $PLEXSTATE)"
-echo -e " ${YEL}Transmission Status.:${NC} $(echo $TRANSSTATE)"
 echo -e " ${YEL}Tautulli Satus......:${NC} $(echo $TAUTSTATE)"
-echo -e " ${YEL}Ombi Status.........:${NC} $(echo $OMBISTATE)"
