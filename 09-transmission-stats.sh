@@ -1,8 +1,8 @@
 #!/bin/bash
-
-source config/colors.txt
-source ./config.conf
-/bin/bash config/dependency-check.sh
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+source $DIR/config/colors.txt
+source $DIR/config.conf
+/bin/bash $DIR/config/dependency-check.sh
 
 LIST="$(transmission-remote -n $TRANSUSER:$TRANSPASS -l)"
 STATS="$(transmission-remote -n $TRANSUSER:$TRANSPASS -st | tail -5)"
