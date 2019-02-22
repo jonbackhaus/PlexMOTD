@@ -1,8 +1,8 @@
 #!/bin/bash
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-source $DIR/config.conf
-source $DIR/config/colors.txt
-/bin/bash $DIR/config/dependency-check.sh
+# DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+# source $DIR/config.conf
+# source $DIR/config/colors.txt
+# /bin/bash $DIR/config/dependency-check.sh
 
 PLEXSTATS="$(curl -s "$TAUTIP:$TAUTPORT/api/v2?apikey=$TAUTAPI&cmd=get_activity")"
 
